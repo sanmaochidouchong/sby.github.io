@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影社区 | Photography Community</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* 语言切换样式 */
+        .lang-toggle {
+            display: flex;
+            gap: 5px;
+            margin-left: auto;
+        }
+        .lang-btn {
+            background: none;
+            border: 1px solid #333;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .lang-btn.active {
+            background: #333;
+            color: white;
+        }
+        /* 双语内容样式 */
+        .lang-zh, .lang-en {
+            display: block;
+        }
+        .lang-en {
+            display: none;
+        }
+        .en .lang-zh {
+            display: none;
+        }
+        .en .lang-en {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>
+                    <span class="lang-zh">兴趣爱好社区</span>
+                    <span class="lang-en">Hobby Community</span>
+                </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                    <span class="lang-zh">首页</span>
+                    <span class="lang-en">Home</span>
+                </a></li>
+                <li><a href="photography.html">
+                    <span class="lang-zh">摄影</span>
+                    <span class="lang-en">Photography</span>
+                </a></li>
+                <li><a href="travel.html">
+                    <span class="lang-zh">旅行</span>
+                    <span class="lang-en">Travel</span>
+                </a></li>
+                <li><a href="cooking.html">
+                    <span class="lang-zh">烹饪</span>
+                    <span class="lang-en">Cooking</span>
+                </a></li>
+            </ul>
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="switchLanguage('zh')">
+                    <span class="lang-zh">中文</span>
+                    <span class="lang-en">Chinese</span>
+                </button>
+                <button class="lang-btn" onclick="switchLanguage('en')">
+                    <span class="lang-zh">英文</span>
+                    <span class="lang-en">English</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.2008php.com/2011_Website_appreciate/11-04-27/20110427115355.jpg'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <h2>
+                    <span class="lang-zh">摄影社区</span>
+                    <span class="lang-en">Photography Community</span>
+                </h2>
+                <p>
+                    <span class="lang-zh">分享你的摄影作品，交流技巧和心得</span>
+                    <span class="lang-en">Share your photography works, exchange skills and experiences</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>
+                <span class="lang-zh">精选摄影作品</span>
+                <span class="lang-en">Featured Photography Works</span>
+            </h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&auto=format&fit=crop&q=60" alt="自然风光摄影">
+                    <div class="gallery-caption">
+                        <h3>
+                            <span class="lang-zh">旅行途中</span>
+                            <span class="lang-en">Mountain Cloud Sea</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">记录大自然的壮丽景色</span>
+                            <span class="lang-en">Recording the magnificent scenery of nature</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&auto=format&fit=crop&q=60" alt="城市风光摄影">
+                    <div class="gallery-caption">
+                        <h3>
+                            <span class="lang-zh">山间云海</span>
+                            <span class="lang-en">City Night View</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">现代都市的魅力与活力</span>
+                            <span class="lang-en">The charm and vitality of modern cities</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&q=60" alt="人像摄影">
+                    <div class="gallery-caption">
+                        <h3>
+                            <span class="lang-zh">人物肖像</span>
+                            <span class="lang-en">Portrait Photography</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">捕捉真实的情感和故事</span>
+                            <span class="lang-en">Capturing real emotions and stories</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?w=800&auto=format&fit=crop&q=60" alt="微距摄影">
+                    <div class="gallery-caption">
+                        <h3>
+                            <span class="lang-zh">微观世界</span>
+                            <span class="lang-en">Micro World</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">发现生活中的小细节</span>
+                            <span class="lang-en">Discovering small details in life</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&auto=format&fit=crop&q=60" alt="风景摄影">
+                    <div class="gallery-caption">
+                        <h3>
+                            <span class="lang-zh">湖泊倒影</span>
+                            <span class="lang-en">Lake Reflection</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">宁静湖面的完美镜像</span>
+                            <span class="lang-en">Perfect mirror image on the serene lake surface</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.cnTbr_oNc7aBdgys-5k9fwHaE8?w=280&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="街拍">
+                    <div class="gallery-caption">
+                        <h3>
+                            <span class="lang-zh">街头瞬间</span>
+                            <span class="lang-en">Street Moment</span>
+                        </h3>
+                        <p>
+                            <span class="lang-zh">定格城市生活的精彩时刻</span>
+                            <span class="lang-en">Freezing the wonderful moments of city life</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forum-section">
+            <h2>
+                <span class="lang-zh">摄影论坛讨论</span>
+                <span class="lang-en">Photography Forum Discussions</span>
+            </h2>
+            
+            <div class="create-post">
+                <h3>
+                    <span class="lang-zh">发表新话题</span>
+                    <span class="lang-en">Create New Topic</span>
+                </h3>
+                <form class="create-post-form">
+                    <div class="form-group">
+                        <label for="post-title">
+                        <span class="lang-zh">标题</span>
+                        <span class="lang-en">Title</span>
+                    </label>
+                        </label>
+                        <input type="text" id="post-title" placeholder="
+                            输入话题标题
+                            Enter topic title
+                        ">
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">
+                            <span class="lang-zh">内容</span>
+                            <span class="lang-en">Content</span>
+                        </label>
+                        <textarea id="post-content" placeholder="
+                            分享你的摄影心得或问题...
+                            Share your photography experience or questions...
+                        "></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        <span class="lang-zh">发布话题</span>
+                        <span class="lang-en">Publish Topic</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="forum-posts">
+                <div class="forum-post">
+                    <h3>
+                        <span class="lang-zh">新手求助：如何选择第一台单反相机？</span>
+                        <span class="lang-en">Help for beginners: How to choose the first DSLR camera?</span>
+                    </h3>
+                    <div class="post-meta">
+                        <span>发布者：摄影初学者 / Author: Photography Beginner</span>
+                        <span>2023-11-15</span>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            <span class="lang-zh">大家好，我是摄影新手，最近想入手第一台单反相机，预算在5000元左右，请问有什么好的推荐吗？主要想拍风景和人像。</span>
+                            <span class="lang-en">Hello everyone, I'm a photography beginner, and I want to buy my first DSLR camera with a budget of around 5000 yuan. Do you have any good recommendations? I mainly want to shoot landscapes and portraits.</span>
+                        </p>
+                    </div>
+                    <div class="post-actions">
+                        <a href="#" class="like-btn">👍</a>
+                        <span>12</span>
+                        <a href="#">
+                            <span class="lang-zh">回复</span>
+                            <span class="lang-en">Reply</span>
+                        </a>
+                        <span>
+                            <span class="lang-zh">8条评论</span>
+                            <span class="lang-en">8 comments</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="forum-post">
+                    <h3>
+                        <span class="lang-zh">分享我的风光摄影后期技巧</span>
+                        <span class="lang-en">Sharing my landscape photography post-processing techniques</span>
+                    </h3>
+                    <div class="post-meta">
+                        <span>发布者：风光大师 / Author: Landscape Master</span>
+                        <span>2023-11-10</span>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            <span class="lang-zh">最近拍了一组山区风光，想和大家分享一下我的后期处理流程。主要是调整曝光、对比度和色彩平衡，让画面更加生动...</span>
+                            <span class="lang-en">I recently shot a set of mountain landscapes and want to share my post-processing workflow with everyone. Mainly adjusting exposure, contrast, and color balance to make the images more vivid...</span>
+                        </p>
+                        <p>
+                            <span class="lang-zh">首先，我会在Camera Raw中进行基础调整，然后进入Photoshop进行精细修饰...</span>
+                            <span class="lang-en">First, I perform basic adjustments in Camera Raw, then move to Photoshop for fine retouching...</span>
+                        </p>
+                    </div>
+                    <div class="post-actions">
+                        <a href="#" class="like-btn">👍</a>
+                        <span>28</span>
+                        <a href="#">
+                            <span class="lang-zh">回复</span>
+                            <span class="lang-en">Reply</span>
+                        </a>
+                        <span>
+                            <span class="lang-zh">15条评论</span>
+                            <span class="lang-en">15 comments</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="forum-post">
+                    <h3>
+                        <span class="lang-zh">人像摄影：如何引导模特表情？</span>
+                        <span class="lang-en">Portrait photography: How to guide model expressions?</span>
+                    </h3>
+                    <div class="post-meta">
+                        <span>发布者：人像摄影师 / Author: Portrait Photographer</span>
+                        <span>2023-11-05</span>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            <span class="lang-zh">在人像拍摄中，模特的表情管理非常重要。我通常会通过聊天、讲笑话等方式让模特放松，捕捉自然的表情。大家有什么好的经验分享吗？</span>
+                            <span class="lang-en">In portrait photography, managing the model's expressions is very important. I usually make the model relax through chatting, telling jokes, etc., to capture natural expressions. Does anyone have any good experiences to share?</span>
+                        </p>
+                    </div>
+                    <div class="post-actions">
+                        <a href="#" class="like-btn">👍</a>
+                        <span>21</span>
+                        <a href="#">
+                            <span class="lang-zh">回复</span>
+                            <span class="lang-en">Reply</span>
+                        </a>
+                        <span>
+                            <span class="lang-zh">12条评论</span>
+                            <span class="lang-en">12 comments</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="forum-post">
+                    <h3>
+                        <span class="lang-zh">推荐几个适合摄影的小众地点</span>
+                        <span class="lang-en">Recommended niche photography locations</span>
+                    </h3>
+                    <div class="post-meta">
+                        <span>发布者：旅行摄影爱好者 / Author: Travel Photography Enthusiast</span>
+                        <span>2023-10-28</span>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            <span class="lang-zh">厌倦了热门景点的人山人海？这里给大家推荐几个我发现的小众摄影地点，人少景美，非常适合拍照...</span>
+                            <span class="lang-en">Tired of crowds at popular attractions? Here are some niche photography locations I found, with beautiful scenery and fewer people, perfect for photography...</span>
+                        </p>
+                        <p>
+                            <span class="lang-zh">1. 云南小众古镇 - 保存完好的传统建筑，清晨几乎没有人</span>
+                            <span class="lang-en">1. Small ancient town in Yunnan - well-preserved traditional buildings, almost no one in the early morning</span>
+                        </p>
+                        <p>
+                            <span class="lang-zh">2. 浙江海边渔村 - 日出日落非常壮观</span>
+                            <span class="lang-en">2. Coastal fishing village in Zhejiang - magnificent sunrises and sunsets</span>
+                        </p>
+                    </div>
+                    <div class="post-actions">
+                        <a href="#" class="like-btn">👍</a>
+                        <span>35</span>
+                        <a href="#">
+                            <span class="lang-zh">回复</span>
+                            <span class="lang-en">Reply</span>
+                        </a>
+                        <span>
+                            <span class="lang-zh">19条评论</span>
+                            <span class="lang-en">19 comments</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                <span class="lang-zh">&copy; 2023 兴趣爱好社区. 保留所有权利.</span>
+                <span class="lang-en">&copy; 2023 Hobby Community. All rights reserved.</span>
+            </p>
+            <div class="social-links">
+                <a href="#">
+                    <span class="lang-zh">关于我们</span>
+                    <span class="lang-en">About Us</span>
+                </a>
+                <a href="#">
+                    <span class="lang-zh">联系方式</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+                <a href="#">
+                    <span class="lang-zh">隐私政策</span>
+                    <span class="lang-en">Privacy Policy</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 语言切换功能
+        function switchLanguage(lang) {
+            document.documentElement.classList.toggle('en', lang === 'en');
+            
+            // 更新按钮状态
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            const activeBtn = lang === 'zh' ? buttons[0] : buttons[1];
+            activeBtn.classList.add('active');
+            
+            // 保存语言选择到本地存储
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        // 页面加载时，检查用户的语言偏好
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) {
+                switchLanguage(savedLang);
+            } else {
+                // 默认设置为英文
+                switchLanguage('en');
+            }
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
